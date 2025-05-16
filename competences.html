@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Kenza Hatem - Mes Compétences</title>
+	<link href="css/competences.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="js/..."></script>
+  <script src="https://kit.fontawesome.com/56b8d626b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="tab-container">
+            <!-- Onglet 1 -->
+            <input type="radio" name="tab" id="tab1" class="tab tab--1"  />
+            <label class="tab_label" for="tab1"><a href="index.html" >Accueil</a></label>
+        
+            <!-- Onglet 2 -->
+            <input type="radio" name="tab" id="tab2" class="tab tab--2" checked />
+            <label class="tab_label" for="tab2"><a href="competences.html" >Compétences</a></label>
+        
+            <!-- Onglet 3 -->
+            <input type="radio" name="tab" id="tab3" class="tab tab--3" />
+            <label class="tab_label" for="tab3"><a href="projets.html" >Expériences & Projets</a></label>
+        
+            <!-- Onglet 4 -->
+            <input type="radio" name="tab" id="tab4" class="tab tab--4" />
+            <label class="tab_label" for="tab4"><a href="portfolio.html" >Mon portfolio</a></label>
+        
+            <!-- Onglet 5 -->
+            <input type="radio" name="tab" id="tab5" class="tab tab--5" />
+            <label class="tab_label" for="tab5"><a href="contact.html" >Contactez-moi</a></label>
+        
+            <!-- Indicateur -->
+            <div class="indicator"></div>
+        </div>
+    </header>
+<!-- <div style="display: flex; justify-content: center; align-items: center;">
+    <img style="max-width: 30%; max-height: 30%;" src="src/360_F_564927098_I7xsrFofOV79pL8ehwl5BKU5MSXVhbsO-removebg-preview.png">
+  </div> -->
+  
+  <div class="competences-container">
+    <!-- Section Langages de programmation -->
+    <div class="category">
+        <h2>Langages de programmation</h2>
+        <div class="skills">
+            <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="skill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="skill"><i class="fab fa-php"></i><span>PHP</span></div>
+            <div class="skill"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill"><i class="fab fa-js"></i><span>TypeScript</span></div> <!-- Ajout de TypeScript -->
+        </div>
+    </div>
+
+    <!-- Section Frameworks et bibliothèques -->
+    <div class="category">
+        <h2>Frameworks et bibliothèques</h2>
+        <div class="sub-category">
+            <h3>Front-end</h3>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="skill"><i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <h3>Back-end</h3>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                <div class="skill"><i class="fab fa-node"></i><span>Node.js</span></div>
+                <div class="skill"><i class="fab fa-java"></i><span>Spring Boot</span></div> <!-- Ajout de Spring Boot -->
+                <div class="skill"><i class="fab fa-js"></i><span>Deno</span></div> <!-- Ajout de Deno -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Outils de développement -->
+    <div class="category">
+        <h2>Outils de développement</h2>
+        <div class="sub-category">
+            <h3>Versionning</h3>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-github"></i><span>GitHub</span></div>
+                <div class="skill"><i class="fab fa-gitlab"></i><span>GitLab</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <h3>DevOps</h3>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
+                <div class="skill"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
+                <div class="skill"><i class="fab fa-aws"></i><span>AWS</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <h3>Tests</h3>
+            <div class="skills">
+                <div class="skill"><i class="fas fa-vial"></i><span>JUnit</span></div>
+                <div class="skill"><i class="fas fa-flask"></i><span>Mockito</span></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Base de données -->
+    <div class="category">
+        <h2>Base de données</h2>
+        <div class="skills">
+
+            <div class="skill"><i class="fas fa-database"></i><span>SQL</span></div>
+            <div class="skill"><i class="fas fa-database"></i><span>NoSQL</span></div>
+            <div class="skill"><i class="fas fa-database"></i><span>NewSQL</span></div>
+            <div class="skill"><i class="fas fa-project-diagram"></i><span>Graphes</span></div> <!-- Ajout de GraphQL -->
+        </div>
+    </div>
+
+    <!-- Section Data Science & Machine Learning -->
+    <div class="category">
+        <h2>Data Science & Machine Learning</h2>
+        <div class="skills">
+            <div class="skill"><i class="fas fa-chart-line"></i><span>NumPy</span></div>
+            <div class="skill"><i class="fas fa-chart-bar"></i><span>Pandas</span></div>
+            <div class="skill"><i class="fas fa-brain"></i><span>TensorFlow</span></div>
+            <div class="skill"><i class="fas fa-robot"></i><span>Scikit-Learn</span></div>
+        </div>
+    </div>
+
+    <!-- Section Systèmes et méthodes -->
+    <div class="category">
+        <h2>Systèmes et méthodes</h2>
+        <div class="sub-category">
+            <h3>Systèmes d'exploitation</h3>
+            <div class="skills">
+                <div class="skill"><i class="fab fa-linux"></i><span>Linux</span></div>
+                <div class="skill"><i class="fab fa-windows"></i><span>Windows</span></div>
+            </div>
+        </div>
+        <div class="sub-category">
+            <h3>Méthodologies</h3>
+            <div class="skills">
+                <div class="skill"><i class="fas fa-project-diagram"></i><span>SCRUM</span></div>
+                <div class="skill"><i class="fas fa-sitemap"></i><span>UML</span></div>
+                <div class="skill"><i class="fas fa-tasks"></i><span>Gestion de projet</span></div> <!-- Ajout de Gestion de projet -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Autres compétences -->
+    <div class="category">
+        <h2>Autres compétences</h2>
+        <div class="skills">
+            <div class="skill"><i class="fab fa-figma"></i><span>Figma</span></div>
+            <div class="skill"><i class="fas fa-file-alt"></i><span>LaTeX</span></div>
+            <div class="skill"><i class="fas fa-lock"></i><span>Cryptologie</span></div> <!-- Ajout de Cryptologie -->
+            <div class="skill"><i class="fas fa-balance-scale"></i><span>Droit du numérique</span></div> <!-- Ajout de Droit du numérique -->
+            <div class="skill"><i class="fas fa-network-wired"></i><span>Réseaux</span></div>
+        </div>
+    </div>
+</div>
+    <footer> <p> ©2025 Mon site web. Tous droits réservés.</p></footer>
+</body>
+</html>

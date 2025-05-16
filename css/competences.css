@@ -1,0 +1,400 @@
+
+@media screen and (min-width : 301px)and (max-width : 576px){
+    body {
+        font-size: x-small;
+    }
+}
+@media screen and (min-width : 577px)and (max-width :700px){
+    body {
+        font-size: small;
+    }
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(-45deg, #2c3e50, #34495e, #4a69bd, #6a89cc);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column; /* Alignement vertical */
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh;
+}
+
+/* Animation du dégradé */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 6px #000000;
+    margin-top: 20px;
+}
+header {
+
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Prend toute la largeur */
+    margin-bottom: 100px; /* Conservez cette marge si nécessaire */
+    padding: 10px 0; /* Ajoutez un peu de padding si nécessaire */
+}
+footer {
+    margin-top: 10%;
+    background-color: #2b2929;
+    text-align: center;
+    color :#b4b4b4 ;
+    position: fixed ;
+    bottom : 0 ;
+    width : 100% ;
+    
+}
+h2 {
+    text-align: center;
+
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 15px;
+}
+ul li {
+    list-style: none;
+}
+.langages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.comp {
+    background-color: #f2f8f9;
+    color : #666 ;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding : 10px ;
+    margin : 25px ;
+    backdrop-filter: blur(-50%);
+    
+}
+.comp ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.comp li {
+    list-style: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.comp li:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.comp img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Animation du dégradé */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animation d'apparition des sections */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Délais d'animation pour chaque section */
+.section:nth-child(1) { animation-delay: 0.2s; }
+.section:nth-child(2) { animation-delay: 0.4s; }
+.section:nth-child(3) { animation-delay: 0.6s; }
+.section:nth-child(4) { animation-delay: 0.8s; }
+.section:nth-child(5) { animation-delay: 1s; }
+.section:nth-child(6) { animation-delay: 1.2s; }
+.section:nth-child(7) { animation-delay: 1.4s; }
+.section:nth-child(8) { animation-delay: 1.6s; }
+.section:nth-child(9) { animation-delay: 1.8s; }
+.section:nth-child(10) { animation-delay: 2s; }
+.section:nth-child(11) { animation-delay: 2.2s; }
+
+.button {
+    font-weight: bold;
+    background: linear-gradient(to right, #a6ecdd, #7dddcc, #69e5ce);
+    /* padding: 6px 15px; */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover a {
+    color: #20B2AA;
+}
+
+.button:hover {
+    transform: scale(1.01);
+    transition: .4s ease-in;
+    background: linear-gradient(to right,#000000, #000000, #000000);
+}
+
+.tab-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centre les onglets horizontalement */
+    background-color: #f2f2f2; /* Couleur de fond pour le conteneur */
+    border-radius: 9px;
+    padding: 5px; /* Espacement intérieur */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.tab_label a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; /* Hérite de la couleur du parent */
+}
+.indicator {
+    content: "";
+    width: 130px;
+    height: 28px;
+    background: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 9;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    transition: all 0.2s ease-out;
+}
+
+.tab {
+    width: 130px;
+    height: 28px;
+    position: absolute;
+    z-index: 99;
+    outline: none;
+    opacity: 0;
+}
+
+.tab_label {
+    width: 130px;
+    height: 28px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Position de l'indicateur pour chaque onglet */
+.tab--1:checked ~ .indicator {
+    left: 2px;
+}
+
+.tab--2:checked ~ .indicator {
+    left: calc(130px + 2px);
+}
+
+.tab--3:checked ~ .indicator {
+    left: calc(130px * 2 + 2px);
+}
+
+.tab--4:checked ~ .indicator {
+    left: calc(130px * 3 + 2px);
+}
+
+.tab--5:checked ~ .indicator {
+    left: calc(130px * 4 + 2px);
+}
+/* Règles pour le survol (hover) */
+.tab_label:hover ~ .indicator {
+    transition: all 0.2s ease-out;
+}
+
+.tab_label[for="tab1"]:hover ~ .indicator {
+    left: 2px;
+}
+
+.tab_label[for="tab2"]:hover ~ .indicator {
+    left: calc(130px + 2px);
+}
+
+.tab_label[for="tab3"]:hover ~ .indicator {
+    left: calc(130px * 2 + 2px);
+}
+
+.tab_label[for="tab4"]:hover ~ .indicator {
+    left: calc(130px * 3 + 2px);
+}
+
+.tab_label[for="tab5"]:hover ~ .indicator {
+    left: calc(130px * 4 + 2px);
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.competences-container {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Espace entre le header et le contenu */
+    text-align: center;
+}
+.category {
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    backdrop-filter: blur(10px); /* Effet de flou */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 20px; /* Espace intérieur */
+    margin-bottom: 20px; /* Espace entre les cartes */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+}
+
+.category h2 {
+    font-size: 1.5rem; /* Taille réduite */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 300; /* Police plus fine */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+.sub-category h3 {
+    font-size: 1.2rem; /* Taille réduite */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 300; /* Police plus fine */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; /* Centrer les compétences */
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+    border-radius: 50px; /* Forme ovale */
+    padding: 10px 20px; /* Espace intérieur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espace entre l'icône et le texte */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    background: rgba(255, 255, 255, 0.3); /* Fond plus clair au survol */
+}
+
+.skill i {
+    font-size: 1.5rem; /* Taille des icônes */
+    color: #ffffff; /* Couleur des icônes */
+}
+
+.skill span {
+    font-size: 1rem; /* Taille du texte */
+    color: #ffffff; /* Couleur du texte */
+}
+/* Animation du dégradé */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,491 @@
+@media screen and (min-width: 301px) and (max-width: 576px) {
+    body {
+        font-size: x-small;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 700px) {
+    body {
+        font-size: small;
+    }
+}
+* {
+    /* border: none !important; */
+    /* outline: none !important; */
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(-45deg, #2c3e50, #34495e, #4a69bd, #6a89cc);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    margin-bottom: 100px; /* Conservez cette marge si nécessaire */
+}
+
+/* Animation du dégradé */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 6px #000000;
+}
+
+
+header {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%; /* Prend toute la largeur */
+    margin-bottom: 100px; /* Conservez cette marge si nécessaire */
+    padding: 10px 0; /* Ajoutez un peu de padding si nécessaire */
+}
+
+footer {
+    margin-top: 10%;
+    background-color: #2b2929;
+    padding: 10px;
+    text-align: center;
+    color: #b4b4b4;
+    margin-bottom: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+/* From Uiverse.io by zanina-yassine */
+/* Remove this container when use*/
+.component-title {
+    /* width: 100%; */
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #888;
+    text-align: center;
+}
+
+.tab-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centre les onglets horizontalement */
+    background-color: #f2f2f2; /* Couleur de fond pour le conteneur */
+    border-radius: 9px;
+    padding: 5px; /* Espacement intérieur */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.indicator {
+    content: "";
+    width: 130px;
+    height: 28px;
+    background: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 9;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    transition: all 0.2s ease-out;
+}
+
+.tab {
+    width: 130px;
+    height: 28px;
+    position: absolute;
+    z-index: 99;
+    outline: none;
+    opacity: 0;
+}
+
+.tab_label {
+    width: 130px;
+    height: 28px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Position de l'indicateur pour chaque onglet */
+.tab--1:checked ~ .indicator {
+    left: 2px;
+}
+
+.tab--2:checked ~ .indicator {
+    left: calc(130px + 2px);
+}
+
+.tab--3:checked ~ .indicator {
+    left: calc(130px * 2 + 2px);
+}
+
+.tab--4:checked ~ .indicator {
+    left: calc(130px * 3 + 2px);
+}
+
+.tab--5:checked ~ .indicator {
+    left: calc(130px * 4 + 2px);
+}
+/* Règles pour le survol (hover) */
+.tab_label:hover ~ .indicator {
+    transition: all 0.2s ease-out;
+}
+
+.tab_label[for="tab1"]:hover ~ .indicator {
+    left: 2px;
+}
+
+.tab_label[for="tab2"]:hover ~ .indicator {
+    left: calc(130px + 2px);
+}
+
+.tab_label[for="tab3"]:hover ~ .indicator {
+    left: calc(130px * 2 + 2px);
+}
+
+.tab_label[for="tab4"]:hover ~ .indicator {
+    left: calc(130px * 3 + 2px);
+}
+
+.tab_label[for="tab5"]:hover ~ .indicator {
+    left: calc(130px * 4 + 2px);
+}
+
+/* Conteneur pour centrer la carte */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+
+}
+
+/* From Uiverse.io by eslam-hany */
+.book {
+    background: inherit;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+  position: relative;
+  border-radius: 10px;
+  width: 50%; /* Largeur augmentée */
+  /* height: 300px; */
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+  overflow: hidden; /* Pour éviter que le contenu ne dépasse */
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+/* Première partie : Photo (visible par défaut) */
+.content {
+  width: 100%;
+  height: 100%;
+padding-top: 10%;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* La photo est au-dessus de la couverture */
+}
+
+.photo {
+  width: 200px; /* Taille de la photo */
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover; /* Pour que la photo remplisse bien le cadre */
+}
+
+/* Deuxième partie : Texte de présentation (s'ouvre au survol) */
+.cover {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px; /* Espacement pour le texte */
+  transform: rotateY(0deg); /* Par défaut, la couverture est fermée */
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotateY(-80deg); /* Rotation au survol */
+  -ms-transform: rotateY(-80deg);
+  transform: rotateY(-80deg);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  color: white; /* Texte en blanc pour contraster avec le fond */
+}
+
+/* Style pour le conteneur */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Style pour le texte */
+#welcome-text {
+    font-size: 3rem; /* Taille du texte */
+    font-weight: bold;
+    color: #333; /* Couleur du texte */
+    border-right: 2px solid #333; /* Curseur clignotant */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Cache le texte qui dépasse */
+}
+
+/* Animation du curseur clignotant */
+@keyframes blink-cursor {
+    from, to {
+        border-right-color: transparent; /* Curseur invisible */
+    }
+    50% {
+        border-right-color: #333; /* Curseur visible */
+    }
+}
+
+/* From Uiverse.io by barisdogansutcu */ 
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-top: 10%;
+    
+  }
+  
+  .download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e82d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .download-button:hover {
+    box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 0px 0px 4px 4px;
+    transform: translateY(0%);
+    background-color: #01e056;
+    border: solid 1px #01e0572d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+  }
+  
+  .download-button:hover .download {
+    transform: translateY(100%);
+  }
+  
+  .download svg polyline,
+  .download svg line {
+    animation: docs 1s infinite;
+  }
+  
+  @keyframes docs {
+    0% {
+      transform: translateY(0%);
+    }
+  
+    50% {
+      transform: translateY(-15%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    text-align: center;
+}
+.passions-container {
+    margin: 5% auto 10%; /* Ajout du margin-bottom de 10% */
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fond semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Limite la largeur du conteneur */
+    width: 90%; /* Prend 90% de la largeur de l'écran */
+}
+
+.passions-container h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.passions-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.passion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.passion-item i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.passion-item p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Effet de survol */
+.passion-item:hover {
+    transform: translateY(-10px);
+}
+
+.passion-item:hover i {
+    transform: scale(1.2);
+    color: #ffdd57; /* Changement de couleur au survol */
+}
+
+.passion-item:hover p {
+    opacity: 1;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.passion-item {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.passion-item:nth-child(1) { animation-delay: 0.1s; }
+.passion-item:nth-child(2) { animation-delay: 0.2s; }
+.passion-item:nth-child(3) { animation-delay: 0.3s; }
+.passion-item:nth-child(4) { animation-delay: 0.4s; }
+.passion-item:nth-child(5) { animation-delay: 0.5s; }
+
+
+.book::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: slideBorder 2s infinite;
+}
+@keyframes slideBorder {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+

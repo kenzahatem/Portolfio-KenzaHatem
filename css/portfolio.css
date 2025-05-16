@@ -1,0 +1,426 @@
+@media screen and (min-width: 301px) and (max-width: 576px) {
+  body {
+    font-size: x-small;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 700px) {
+  body {
+    font-size: small;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(-45deg, #2c3e50, #34495e, #4a69bd, #6a89cc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  margin: 0;
+  margin-bottom: 100px; /* Conservez cette marge si nécessaire */
+}
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+h1{
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 6px #000000;
+}
+h3 {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 6px #000000;
+}
+
+header {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  width: 100%; /* Prend toute la largeur */
+  margin-bottom: 100px; /* Conservez cette marge si nécessaire */
+  padding: 10px 0; /* Ajoutez un peu de padding si nécessaire */
+}
+
+footer {
+  margin-top: 10%;
+  background-color: #2b2929;
+  text-align: center;
+  color: #b4b4b4;
+  margin-bottom: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.projet {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 40px); /* 3 projets par ligne */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.projets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* Aligne les projets à gauche */
+}
+
+.projet:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projet h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.projet p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.projet ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.projet ul li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1a252f;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projet {
+      flex: 1 1 calc(50% - 40px); /* 2 projets par ligne */
+  }
+}
+
+@media (max-width: 768px) {
+  .projet {
+      flex: 1 1 100%; /* 1 projet par ligne */
+  }
+}
+
+.cta {
+  border: none;
+  background: none;
+}
+
+.ctb {
+  border: none;
+  background: linear-gradient(to right, #2b2929, #242323, #737373);
+  padding: 10px;
+  margin: 25px;
+  color: #eeeeee;
+  border-radius: 20px;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 1px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+
+.cta span a {
+  text-decoration: none;
+  color: #eeeeee;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  color: #eeeeee;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+  color: #eeeeee;
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+  color: #eeeeee;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #eeeeee;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #eeeeee;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #eeeeee;
+}
+
+.plus {
+  text-align: center;
+}
+
+.button {
+  font-weight: bold;
+  background: linear-gradient(to right, #a6ecdd, #7dddcc, #69e5ce);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover a {
+  color: #20b2aa;
+}
+
+.button:hover {
+  transform: scale(1.01);
+  transition: 0.1s ease-in;
+  background: linear-gradient(to right, #000000, #000000, #000000);
+}
+
+.tab-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centre les onglets horizontalement */
+  background-color: #f2f2f2; /* Couleur de fond pour le conteneur */
+  border-radius: 9px;
+  padding: 5px; /* Espacement intérieur */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+.tab_label a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: inherit; /* Hérite de la couleur du parent */
+}
+.indicator {
+  content: "";
+  width: 130px;
+  height: 28px;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 9;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  transition: all 0.2s ease-out;
+}
+
+.tab {
+  width: 130px;
+  height: 28px;
+  position: absolute;
+  z-index: 99;
+  outline: none;
+  opacity: 0;
+}
+
+.tab_label {
+  width: 130px;
+  height: 28px;
+  position: relative;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* Position de l'indicateur pour chaque onglet */
+.tab--1:checked ~ .indicator {
+  left: 2px;
+}
+
+.tab--2:checked ~ .indicator {
+  left: calc(130px + 2px);
+}
+
+.tab--3:checked ~ .indicator {
+  left: calc(130px * 2 + 2px);
+}
+
+.tab--4:checked ~ .indicator {
+  left: calc(130px * 3 + 2px);
+}
+
+.tab--5:checked ~ .indicator {
+  left: calc(130px * 4 + 2px);
+}
+/* Règles pour le survol (hover) */
+.tab_label:hover ~ .indicator {
+  transition: all 0.2s ease-out;
+}
+
+.tab_label[for="tab1"]:hover ~ .indicator {
+  left: 2px;
+}
+
+.tab_label[for="tab2"]:hover ~ .indicator {
+  left: calc(130px + 2px);
+}
+
+.tab_label[for="tab3"]:hover ~ .indicator {
+  left: calc(130px * 2 + 2px);
+}
+
+.tab_label[for="tab4"]:hover ~ .indicator {
+  left: calc(130px * 3 + 2px);
+}
+
+.tab_label[for="tab5"]:hover ~ .indicator {
+  left: calc(130px * 4 + 2px);
+}
+
+/* Section Expériences Professionnelles */
+.experiences {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px; /* Centre la section et ajoute une marge en bas */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+.experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.experience h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.experience .date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.experience ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.experience ul li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.experience .competences {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Masquer les projets avec la classe .masque */
+.projet.masque {
+  display: none;
+}
+.plus {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#voirPlus {
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#voirPlus:hover {
+  background: linear-gradient(to right, #34495e, #2c3e50);
+}

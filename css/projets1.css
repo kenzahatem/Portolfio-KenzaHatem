@@ -1,0 +1,312 @@
+
+@media screen and (min-width : 301px)and (max-width : 576px){
+  body {
+      font-size: x-small;
+  }
+}
+@media screen and (min-width : 577px)and (max-width :700px){
+  body {
+      font-size: small;
+  }
+}
+body {
+  margin:0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://img.freepik.com/vecteurs-premium/arriere-plan-flou-abstrait-maillage-vectoriel-impressionnant-pour-fond-ecran-flou-degrade-colore-conception-sites-web_84176-2523.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+}
+.part1 {
+    width :50% ;
+    margin : auto ;    
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu .a {
+  position: relative;
+  padding: 5px;
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+}
+
+.menu .a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #666;
+  transition: width 0.5s ease;
+}
+
+.menu .a:hover::after {
+  width: 100%;
+}
+
+.menu .a:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 3px 6px #666;
+}
+
+h1{
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 6px #000000;
+}
+header {
+  background-attachment: fixed;
+  text-align: center;
+  padding: 10px;
+}
+footer {
+  color :#b4b4b4 ;
+    margin-top: 10%;
+    background-color: #2b2929;
+    padding : 10px ;
+    text-align: center;
+    
+}
+h2 {
+    text-align: center;
+
+}
+.projet {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 25px;
+  background-color : #ffffff ; 
+  color: #666;
+  transition: transform 0.1s ease-in;
+
+
+}
+.projt-S4{
+  text-align: left;
+}
+
+.projet-S4:hover {
+  transform: scale(1.05);
+ 
+}
+
+.projet:hover {
+  transform: scale(1.05);
+}
+.projet a {
+  text-align : center ;
+  align-items: center;
+}
+
+  .button {
+    font-weight: bold;
+    background: linear-gradient(to right, #a6ecdd, #7dddcc, #69e5ce);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  .button a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .button:hover a {
+    color: #20b2aa;
+  }
+  
+  .button:hover {
+    transform: scale(1.01);
+    transition: 0.1s ease-in;
+    background: linear-gradient(to right, #000000, #000000, #000000);
+  }
+
+
+  .buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    background-color: #4CC713;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    border: none;
+   }
+   
+   .buttonDownload:hover {
+    background-color: #45a21a;
+    color: white;
+   }
+   
+   .buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+   }
+   
+   .buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+   }
+   
+   .buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+   }
+   
+   .buttonDownload:hover:before {
+    border-color: #cdefbd;
+   }
+   .buttonDownload a {
+    text-decoration: none ;
+    color : #ffffff ; 
+   }
+
+   .buttonDownload:hover:after {
+    border-top-color: #cdefbd;
+    animation-play-state: running;
+   }
+   
+   @keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+
+  
+   }
+.boutton {
+  display: inline-block;
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  background-color: #488aec;
+  color: white;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  text-indent: 15px;
+  border: none;
+  box-shadow: 0 4px 6px -1px #488aec31, 0 2px 4px -1px #488aec17;
+}
+.boutton a {
+  text-decoration: none;
+  color : #ffffff ; 
+}
+
+.boutton:hover {
+  box-shadow: 0 10px 15px -3px #488aec4f, 0 4px 6px -2px #488aec17;
+  cursor : pointer ; 
+}
+
+.boutton:focus,button:active {
+  opacity: .85;
+  box-shadow: none;
+}
+
+.boutton svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.button-explore {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: .75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button-explore:hover {
+  background-color: #000;
+}
+
+.button-explore:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button-explore:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button-explore:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}
